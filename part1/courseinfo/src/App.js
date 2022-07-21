@@ -3,10 +3,12 @@ import React from 'react'
 const Header = ({ course }) => <h1>{course}</h1>
 
 const Part = ({ name, exercises }) => {
+  
   return <p>{name} {exercises}</p>
 }
 
 const Content = ({ parts }) => {
+
   return (
     <React.Fragment>
       <Part name={parts[0].name} exercises={parts[0].exercises} />

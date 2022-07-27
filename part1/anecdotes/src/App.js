@@ -17,7 +17,7 @@ const App = () => {
 
   const [selected, setSelected] = useState(firstIndex)
 
-  // We use this statement so the newIndex is always different than the previous one, avoiding issues
+  // We use this statement so the newIndex is always different than the previous one, avoiding rendering issues
   let newIndex
   do {
     newIndex = Math.floor(Math.random() * 7)
@@ -40,9 +40,6 @@ const App = () => {
 
   const mostVotes = Math.max(...votes);
   const mvIndex = votes.indexOf(mostVotes)
-
-  console.log(newIndex)
-  console.log(anecdotes[selected])
 
   return (
     <React.Fragment>
